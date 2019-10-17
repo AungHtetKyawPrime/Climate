@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#661CD8D2"
             android:backgroundTintMode="src_over"
-            android:background="@drawable/slide_one">
+            android:background="@drawable/land_pollutionthree">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
