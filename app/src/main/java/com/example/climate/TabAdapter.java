@@ -3,6 +3,7 @@ package com.example.climate;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
 
 import com.example.climate.RecyWaste.FactoryWaste;
 import com.example.climate.RecyWaste.HomeWaste;
@@ -18,13 +19,16 @@ public class TabAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                HomeWaste tab1 = new HomeWaste();
+                Log.d("Tab","Home");
+                 HomeWaste tab1 = new HomeWaste();
                 return tab1;
-            case 1:
+
+            case 1:Log.d("Tab","Fact");
                 FactoryWaste tab2 = new FactoryWaste();
                 return tab2;
 
             default:
+
                 return null;
         }
     }

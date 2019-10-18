@@ -2,6 +2,8 @@ package com.example.climate.ui.home;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,8 +14,10 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.widget.Toast;
 
 import com.example.climate.R;
+import com.example.climate.RecyWaste.HomeWaste;
 import com.example.climate.TabAdapter;
 
 public class HomeFragment extends Fragment {
@@ -67,4 +71,11 @@ public class HomeFragment extends Fragment {
             }
         });
     }
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        Toast.makeText(getContext(), "Recycling Process", Toast.LENGTH_SHORT).show();
+    }
+
 }

@@ -12,6 +12,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.widget.Toast;
 
 import com.example.climate.Adapter.TabAdapterOne;
 import com.example.climate.R;
@@ -68,4 +69,6 @@ public class DashboardFragment extends Fragment {
             }
         });
     }
+
+
 }

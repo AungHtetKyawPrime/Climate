@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,4 +57,6 @@ public class HomeWaste extends Fragment {
         data_rcy.add(cans);
         adapter_rcy.notifyDataSetChanged();
     }
+
+
 }
